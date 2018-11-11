@@ -1,0 +1,31 @@
+# Ignore bundler config.
+/app_server/.bundle
+
+# Ignore the default SQLite database.
+/app_server/db/*.sqlite3
+/app_server/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/app_server/log/*
+/app_server/tmp/*
+!/app_server/log/.keep
+!/app_server/tmp/.keep
+
+# Ignore Byebug command history file.
+app_server/.byebug_history
+
+### Rails ###
+/app_server/log
+/app_server/tmp
+/app_server/db/*.sqlite3
+/app_server/db/*.sqlite3-journal
+/app_server/public/system
+/app_server/coverage/
+/app_server/spec/tmp
+app_server/config/initializers/secret_token.rb
+app_server/config/credentials.yml.enc
+app_server/config/master.key
+app_server/config/secrets.yml
+/app_server/.bundle
+/app_server/vendor/bundle
+app_server/.byebug_history
