@@ -1,3 +1,6 @@
+app_client/node_modules
+/app_client/dist
+
 # Ignore bundler config.
 /app_server/.bundle
 
