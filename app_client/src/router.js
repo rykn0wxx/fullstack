@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Register from './views/Register.vue'
 
 Vue.use(Router)
 
@@ -16,8 +17,17 @@ export default new Router({
     {
       path: '/register',
       name: 'register',
-      props: { method: 'POST', action: 'users' },
-      component: () => import('./views/Register.vue')
+      component: Register
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import(/* webpackChunkName: "about" */ './views/Login.vue')
+    },
+    {
+      path: '/theme',
+      name: 'theme',
+      component: () => import(/* webpackChunkName: "about" */ './views/Theme.vue')
     },
     {
       path: '/about',
